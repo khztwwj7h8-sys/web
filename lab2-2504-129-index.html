@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网上书店 - 首页</title>
+    <link rel="stylesheet" href="lab2-2504-129-index.css">
+</head>
+<body>
+    <!-- 头部区域 - 固定定位 -->
+    <header class="header">
+        <div class="logo">
+            <h1>📚 网上书店</h1>
+        </div>
+        <!-- 导航菜单 - 浮动布局 -->
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#" class="nav-link">首页</a></li>
+                
+                <li><a href="#" class="nav-link">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体内容区 -->
+    <main class="main-container">
+        <!-- 左侧栏：图书分类导航 - 相对定位 -->
+        <aside class="left-sidebar">
+            <h3>📚 图书分类</h3>
+            <ul class="category-list">
+                <li><a href="#">文学小说</a></li>
+                <li><a href="#">历史传记</a></li>
+                <li><a href="#">科学技术</a></li>
+                <li><a href="#">经济管理</a></li>
+                
+            </ul>
+        </aside>
+
+        <!-- 中间栏：图书展示区 -->
+        <section class="content-main">
+            <!-- 图书展示区 - 第一排第一列鼠标悬停效果（父相子绝） -->
+            <div class="book-showcase">
+                <h2>🔥 精选好书</h2>
+                <div class="book-row">
+                    <!-- 第一排第一列 - 鼠标悬停显示和隐藏 -->
+                    <div class="book-item first-item">
+                        <img src="img1.jpg" alt="c++" class="book-img">
+                       
+                        <h4>c++</h4>
+                        <p class="price">¥45.00</p>
+                    </div>
+                    
+                    <div class="book-item">
+                        <img src="img2.jpg" alt="java" class="book-img">
+                        <h4>java</h4>
+                        <p class="price">¥89.00</p>
+                    </div>
+                    
+                    <div class="book-item">
+                        <img src="img3.jpg" alt="python" class="book-img">
+                        <h4>python</h4>
+                        <p class="price">¥68.00</p>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <!-- 热门推荐 - 浮动排列 -->
+           
+
+            <!-- 新书上市 - Table布局 -->
+            <div class="new-books">
+                <h2>🆕 新书上市</h2>
+                <table class="books-table">
+                    <thead>
+                        <tr>
+                          
+                            <th>书名</th>
+                            <th>作者</th>
+                            <th>价格</th>
+                           
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           
+                            <td>Web前端开发实战</td>
+                            <td>张三</td>
+                            <td>¥65.00</td>
+                            
+                        </tr>
+                        <tr>
+                           
+                            <td>Python编程指南</td>
+                            <td>李四</td>
+                            <td>¥72.00</td>
+                            
+                        </tr>
+                        <tr>
+                           
+                            <td>数据结构与算法</td>
+                            <td>王五</td>
+                            <td>¥88.00</td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td>云计算技术</td>
+                            <td>赵六</td>
+                            <td>¥92.00</td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td>大数据分析</td>
+                            <td>钱七</td>
+                            <td>¥105.00</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 右侧栏：促销信息 - 固定定位 -->
+        <aside class="right-ad">
+            <div class="ad-box">
+                <h3>🎉 限时优惠</h3>
+                <p>全场图书满200减50</p>
+                <p>会员额外享受9折优惠</p>
+                <button class="ad-btn">立即抢购</button>
+            </div>
+            
+            <div class="ad-box">
+                <h3>🎁 新人福利</h3>
+                <p>首次注册送50元优惠券</p>
+                <p>无门槛使用</p>
+                <button class="ad-btn">免费领取</button>
+            </div>
+            
+            <div class="ad-box">
+                <h3>🚀 快速配送</h3>
+                <p>全国包邮</p>
+                <p>48小时内发货</p>
+                <button class="ad-btn">查看详情</button>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 返回顶部按钮 - 固定定位 -->
+    <div class="back-top">
+        <a href="#top" title="返回顶部">↑</a>
+    </div>
+</body>
+</html>
